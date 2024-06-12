@@ -1,37 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>TailwindCSS</title>
-  </head>
-  <body>
-    <!-- Positioning -->
 
-    <!-- Top left corner -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>TailwindCSS</title>
+</head>
 
-    <!-- Top right corner -->
+<body>
+  <!-- Positioning -->
+  <div class="relative h-12 bg-red-200 w-1/2">
+    <p>Parent Element</p>
+    <div class="absolute bottom-0 right-0 bg-red-500">Absolute Child</div>
+  </div>
+  <br><br>
+  <!-- Top left corner -->
+  <div class="relative h-32 w-32 bg-yellow-100">
+    <div class="absolute left-0 top-0 h-16 w-16 bg-yellow-300"></div>
+  </div>
+  <br><br>
+  <!-- Top right corner -->
+  <div class="relative h-32 w-32 bg-yellow-100">
+    <div class="absolute right-0 top-0 h-16 w-16 bg-yellow-300"></div>
+  </div>
+  <br><br>
+  <!-- Bottom left corner -->
+  <div class="relative h-32 w-32 bg-yellow-100">
+    <div class="absolute left-0 bottom-0 h-16 w-16 bg-yellow-300"></div>
+  </div>
+  <br><br>
+  <!-- Bottom right corner -->
+  <div class="relative h-32 w-32 bg-yellow-100">
+    <div class="absolute left-0 bottom-0 h-16 w-16 bg-yellow-300"></div>
+  </div>
+  <!-- Span top edge -->
+  <div class="relative h-32 w-32 bg-yellow-100">
+    <div class="absolute inset-x-0 top-0 h-16 bg-yellow-300"></div>
+  </div>
+  <br><br>
+  <!-- Span left edge -->
+  <div class="relative h-32 w-32 bg-yellow-100">
+    <div class="absolute inset-y-0 left-0 w-16 bg-yellow-300"></div>
+  </div>
+  <br><br>
+  <!-- Span right edge -->
+  <div class="relative h-32 w-32 bg-yellow-100">
+    <div class="absolute inset-y-0 right-0 w-16 bg-yellow-300"></div>
+  </div>
+  <br><br>
+  <!-- Span bottom edge -->
+  <div class="relative h-32 w-32 bg-yellow-100">
+    <div class="absolute inset-x-0 bottom-0 h-16 bg-yellow-300"></div>
+  </div>
+  <br><br>
+  <!-- Display Classes -->
+  <div>Lorem ipsum dolor sit amet, <span class="inline font-bold">This is inline</span> adipisicing elit. Ducimus modi
+    perferendis ad adipisci qui dolores quod porro deserunt eos labore quam facere voluptas, atque est inventore <span
+      class="inline-block font-bold">This is inline-block</span>sit explicabo non quae voluptatum rem et fugit animi.
+    Quam, eveniet saepe. Et dolores fuga <span class="block font-bold">This is block</span>commodi illum sed, voluptas
+    nesciunt ullam officiis repellat quaerat. Libero quisquam repellat vitae animi dolorum accusamus <span
+      class="hidden font-bold">This is hidden</span>at possimus ducimus!</div>
+  <br><br>
+  <!-- Z-Index -->
+  <div class="relative h-36">
+    <div class="absolute left-10 w-24 h-24 bg-blue-300 z-40">1</div>
+    <div class="absolute left-20 w-24 h-24 bg-blue-400">2</div>
+    <div class="absolute left-40 w-24 h-24 bg-blue-500 z-10">3</div>
+    <div class="absolute left-60 w-24 h-24 bg-blue-600">4</div>
+    <div class="absolute left-80 w-24 h-24 bg-blue-700 z-30">5</div>
+  </div>
+  <br><br>
+  <!-- Floats -->
+  <div class="w-1/2">
+    <img class="h-48 w-48 float-left m-4" src="../assets/img/img1.jpg" alt="">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis delectus illum reprehenderit ex eaque error
+      molestiae asperiores voluptates iusto ducimus, veritatis iure dolorum cumque rem magni nihil commodi esse
+      voluptate autem ratione optio ea odit tempore doloremque! Natus soluta minus consectetur deleniti laborum veniam
+      veritatis, aut quaerat quae molestiae maiores, at nihil perspiciatis blanditiis. Dolor, perspiciatis. Quae
+      praesentium, maiores odit alias optio fuga culpa? Quas, accusamus odio. Expedita non necessitatibus quis
+      distinctio, eaque explicabo, eius, debitis officia numquam inventore ducimus! Obcaecati quam exercitationem
+      incidunt, autem alias facere dolore, est aliquid officiis nam eveniet ea provident accusamus adipisci blanditiis
+      repellat excepturi vel illum esse dolorum. Unde, voluptate. Dolorem, itaque nostrum provident laudantium maxime
+      delectus quia commodi pariatur ullam cupiditate alias laboriosam? Praesentium consequuntur delectus quas a
+      temporibus dolorum, ratione vero commodi sequi harum minima quia aspernatur perferendis blanditiis, vitae
+      obcaecati odio, architecto enim. Consequatur tempore veniam quo totam ad ea ducimus.</p>
+  </div>
+</body>
 
-    <!-- Bottom left corner -->
-
-    <!-- Bottom right corner -->
-
-    <!-- Span top edge -->
-
-    <!-- Span left edge -->
-
-    <!-- Span right edge -->
-
-    <!-- Span bottom edge -->
-
-    <!-- Display Classes -->
-
-    <!-- Z-Index -->
-
-    <!-- Floats -->
-  </body>
 </html>
 
 <!-- Position Classes
